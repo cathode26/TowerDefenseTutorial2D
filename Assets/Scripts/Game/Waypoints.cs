@@ -1,8 +1,10 @@
 using UnityEngine;
 
-public class WayPoint : MonoBehaviour
+public class Waypoints : MonoBehaviour
 {
     [SerializeField] private Vector3[] points;
+    public Vector3[] Points => points;
+    public Vector3 CurrentPosition => transform.position;
     private void Start()
     {
         
